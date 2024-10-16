@@ -1,8 +1,6 @@
 <!-- <app-face-snap-g1 *ngFor="let mySnap of mySnap" [mySnap]="mySnap"></app-face-snap-g1> -->
 <app-face-snap-list></app-face-snap-list>
-@for (mySnap of mySnap; track mySnap.index;let index = $index) {
-    <app-face-snap-g1 [mySnap]="mySnap" [index]="index+1"/>
-}
+
 
 <!-- Other components like your FaceSnap list -->
 

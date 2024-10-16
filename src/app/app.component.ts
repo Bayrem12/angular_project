@@ -20,35 +20,5 @@ export class AppComponent {
   mySnap!: FaceSnap[];
 
 
-  ngOnInit(){
-    this.mySnap=[
-    {
-      title:'Archibald',
-      description:'Mon meilleur ami depuis tout petit !',
-      ImageUrl:'https://m.media-amazon.com/images/M/MV5BNDIyOGYzYmUtOTM3YS00MWM0LWJhOTEtZTY5NmRmMjFmYjVmXkEyXkFqcGc@._V1_.jpg',
-      createDate:new Date(),
-      buttonText:"Oh Snap!",
-      snaps:0,
-      index:1,
-    },
-    {
-      title:'three rock montain',
-      description:'endroit magnifique',
-      ImageUrl:'https://images.pexels.com/photos/8546534/pexels-photo-8546534.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-      createDate:new Date(),
-      buttonText:"Oh Snap!",
-      snaps:0,
-      index:2,
-    },
-    {
-      title:'un bon repas',
-      description:'Yumm c bon!',
-      ImageUrl:'https://media-cdn.tripadvisor.com/media/photo-p/0e/fb/51/86/le-bon-repas.jpg',
-      createDate:new Date(),
-      buttonText:"Oh Snap!",
-      snaps:0,
-      index:3,
-    }
-
-  ];}
+  
 }

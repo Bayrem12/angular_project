@@ -15,13 +15,13 @@ export class FaceSnapG1Component {
   @Input() index!: number;
 
   onSnap():void{
-    if(this.mySnap.buttonText === "Oh Snap!"){
-      this.mySnap.snaps++;
-      this.mySnap.buttonText = "Oh unSnap!";
+    if(this.faceSnap.buttonText === "Oh Snap!"){
+      this.faceSnap.snaps++;
+      this.faceSnap.buttonText = "Oh unSnap!";
     }
     else{
-      this.mySnap.snaps--;
-      this.mySnap.buttonText = "Oh Snap!";
+      this.faceSnap.snaps--;
+      this.faceSnap.buttonText = "Oh Snap!";
     }
   }
   
