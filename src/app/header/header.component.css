@@ -1,0 +1,30 @@
+/* Ensure the toolbar has some padding */
+mat-toolbar {
+    padding: 0 16px; /* Adjust horizontal padding */
+  }
+  
+  /* Style the title within the toolbar */
+  mat-toolbar span {
+    font-size: 24px; /* Title size */
+    font-weight: bold; /* Make the title bold */
+    color: white; /* Title color */
+  }
+  
+  /* Space between the title and nav links */
+  .spacer {
+    flex: 1 1 auto; /* Takes up available space */
+  }
+  
+  /* Style the navigation links */
+  nav a {
+    text-decoration: none; /* Remove underline from links */
+    color: white; /* Link color */
+    padding: 8px 16px; /* Padding around links */
+    border-radius: 4px; /* Rounded corners */
+  }
+  
+  /* Change link color on hover */
+  nav a:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Light background on hover */
+  }
+  
