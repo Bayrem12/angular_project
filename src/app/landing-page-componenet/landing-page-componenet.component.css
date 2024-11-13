@@ -1,0 +1,75 @@
+/* Global reset and box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body and overall page styling */
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7fa; /* Soft background */
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    margin: 0;
+  }
+  
+  /* Landing block container */
+  .landing-block {
+    margin-top: 60px;
+    text-align: center;
+    
+    
+  }
+  
+  /* Styling the image to be medium-sized */
+  .landing-block img {
+    width: 70%; /* Set to 70% of the parent container width for medium size */
+    max-width: 600px; /* Cap the max width to a reasonable medium size */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 20px;
+    display: block; /* Ensure it's a block-level element */
+    margin-left: auto; 
+    margin-right: auto;
+  }
+  
+  /* Styling the links section */
+  .landing-links {
+    margin-top: 40px;
+  }
+  
+  /* Styling the "Continue" link */
+  .landing-links a {
+    text-decoration: none;
+    color: #fff;
+    background-color: #3faffa;
+    padding: 12px 30px;
+    border-radius: 30px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+  }
+  
+  /* Hover effect on the link */
+  .landing-links a:hover {
+    background-color: #3291cc;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+  }
+  
+  /* Optional: Responsive design for small screens */
+  @media (max-width: 600px) {
+    .landing-block {
+      padding: 20px;
+    }
+  
+    .landing-links a {
+      font-size: 1rem;
+      padding: 10px 20px;
+    }
+  }
+  

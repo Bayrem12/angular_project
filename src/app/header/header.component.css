@@ -1,30 +1,69 @@
-/* Ensure the toolbar has some padding */
-mat-toolbar {
-    padding: 0 16px; /* Adjust horizontal padding */
-  }
-  
-  /* Style the title within the toolbar */
-  mat-toolbar span {
-    font-size: 24px; /* Title size */
-    font-weight: bold; /* Make the title bold */
-    color: white; /* Title color */
-  }
-  
-  /* Space between the title and nav links */
-  .spacer {
-    flex: 1 1 auto; /* Takes up available space */
-  }
-  
-  /* Style the navigation links */
-  nav a {
-    text-decoration: none; /* Remove underline from links */
-    color: white; /* Link color */
-    padding: 8px 16px; /* Padding around links */
-    border-radius: 4px; /* Rounded corners */
-  }
-  
-  /* Change link color on hover */
-  nav a:hover {
-    background-color: rgba(255, 255, 255, 0.2); /* Light background on hover */
-  }
-  
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body and overall background */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f7fa;
+  color: #333;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+/* Header styling */
+h1 {
+  text-align: center;
+  font-size: 3rem;
+  color: #3faffa;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* Navigation Bar */
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 20px;
+}
+
+/* Styling the individual links */
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-size: 1.1rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  padding: 10px 20px;
+  border-radius: 25px;
+}
+
+/* Hover effects for links */
+nav a:hover {
+  background-color: #3faffa;
+  color: white;
+  transform: translateY(-2px);
+}
+
+/* Active link styling */
+nav a.active {
+  background-color: #3faffa;
+  color: white;
+  font-weight: bold;
+  transform: translateY(-2px);
+}
+
+/* Router Outlet for future content */
+router-outlet {
+  display: block;
+  margin-top: 40px;
+  padding: 5px;
+  background-color: rgb(131, 185, 246);
+  border-radius: 3px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}

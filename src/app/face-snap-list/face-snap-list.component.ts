@@ -4,6 +4,7 @@ import { NgFor } from '@angular/common';
 import { FaceSnapsService } from '../services/facesnaps.service';
 import { FaceSnapG1Component } from '../face-snap-g1/face-snap-g1.component';
 import { HeaderComponent } from '../header/header.component';
+import { RouterOutlet } from '@angular/router';
 
 
 
@@ -11,7 +12,7 @@ import { HeaderComponent } from '../header/header.component';
 @Component({
   selector: 'app-face-snap-list',
   standalone: true,
-  imports: [NgFor,FaceSnapG1Component,HeaderComponent],
+  imports:[NgFor,FaceSnapG1Component,HeaderComponent,RouterOutlet],
   templateUrl: './face-snap-list.component.html',
   styleUrl: './face-snap-list.component.css'
 })
@@ -19,10 +20,10 @@ export class FaceSnapListComponent implements OnInit {
   constructor(private faceSnapsService: FaceSnapsService) { 
 
   }
-  faceSnaps !: FaceSnap[];
+  mySnap!: FaceSnap[];
   ngOnInit(): void {
-    this.faceSnaps = this.faceSnapsService.faceSnaps;
-      this.faceSnaps=[
+    this.mySnap = this.faceSnapsService.faceSnaps;
+      this.mySnap=[
       {
         title:'Archibald',
         description:'Mon meilleur ami depuis tout petit !',
